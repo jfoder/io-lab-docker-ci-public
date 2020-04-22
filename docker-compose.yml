@@ -3,7 +3,9 @@ version: '3.0'
 services:
   web:
     # TODO: build context, ports and redis dependency
-    image: jfoder/io-lab-docker-ci-public
+    build:
+        context: ./
+    #image: jfoder/io-lab-docker-ci-public
     ports:
       - 5000:5000
     depends_on: 
